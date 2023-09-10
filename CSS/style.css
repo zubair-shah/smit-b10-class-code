@@ -1,0 +1,89 @@
+/* @font-face {
+    font-family: "bestmoment";
+    src: url('./Best\ Moment.otf');
+} */
+
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3{
+    background-color: rgba(207, 38, 38, 0.5);
+}
+p{
+font-family: 'bestmoment';
+}
+.box1{
+    border-width: 7px;
+    border-color: yellow;
+    border-style: solid;
+
+    height: 100px;
+}
+.box2{
+    border: 7px solid red;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* padding-bottom: 100px; */
+    padding: 50px 20px 30px 40px;
+
+}
+.box3{
+    border: 7px solid brown;
+    height: 100px;
+    margin: 50px 80px 65px 71px;
+}
+p.p2::first-letter{
+  /* word-spacing: 20px;
+  letter-spacing: 20px; */
+/* font-family: 'IBM Plex Sans Arabic', sans-serif;
+text-align: right; */
+/* vertical-align:bottom ; */
+font-size: 50px;
+}
+p.p2::first-line{
+font-weight: bold;
+}
+
+/* a:visited {
+    color: black;
+} */
+
+a{
+    font-size: 30px;
+    color: deeppink ;
+}
+
+a:hover{
+    color: blue;
+}
+input.submit:active{
+    background-color: yellow;
+}
+input.input-text{
+    border: none;
+}
+input.input-text:focus{
+    border: 1px solid rgb(75, 252, 6);
+    outline: rgb(75, 252, 6);
+    /* background-color: rgb(75, 252, 6) !important; */
+}
+p[class~="xyz"]{
+    color: red;
+}
+p[class^="p"]{
+    color: yellow;
+}
+p[class$="z"]{
+    color: brown;
+}
+p[class*="xyz"]{
+    color: purple;
+}

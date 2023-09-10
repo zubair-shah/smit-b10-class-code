@@ -1,0 +1,13 @@
+burger shop            |        syed talha ,  Subhan , waleed asad , 
+beauty saloon          |     junaid shaikh , Ahmed Raza ,  Junaid 
+car shop               | Asim Muneer  , Hunain , Syed Huzaifa , Arsalan
+pizza shop             | Noman , Asad ,  Abdul Shafey , 
+barber salon           | Ubaidullah ashfaq , Maaz , Muhammad Atif
+NGO like saylani       |   Muhammad Saad , aman gilani , Ahmed Noor
+Website for Air lines  |   owais nawab , Rayyan ,  Abdullah 
+for Masjid             | Habib quraishi  , Hammad shinwari , 
+for coaching center    |    Anas shahid  , Ateeq , jawad
+portflio for developer | Muhammad Afnan , Idrees , Farhan
+real estate            |  Shahraim Khan , Mazhar , Muhammad Owais 
+for gym                |  Muhammad Sufiyan , azhar , Mustafa ,
+
