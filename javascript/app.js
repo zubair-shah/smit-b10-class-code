@@ -511,14 +511,14 @@
 // console.log(complexArray[2][2][1])
 
 
-let array = ["zubair", 23, false]
+// let array = ["zubair", 23, false]
 // console.log(array[0]);
 
-let object = {
-   name: "zubair",
-   age: 23,
-   married: false
-}
+// let object = {
+//    name: "zubair",
+//    age: 23,
+//    married: false
+// }
 // console.log(array)
 // console.log(object)
 // console.log("getting from array" , array[0]);
@@ -528,21 +528,21 @@ let object = {
 // console.log("getting from objet" , object.age)
 // console.log("getting from objet" , object.married)
 
-let car = {
-   model: 2023,
-   brandName: "Volvo",
-   color: "blue",
-}
+// let car = {
+//    model: 2023,
+//    brandName: "Volvo",
+//    color: "blue",
+// }
 
-let myCarColor = "color"
+// let myCarColor = "color"
 
-car[myCarColor] = "yellow"
+// car[myCarColor] = "yellow"
 
-car.forSale = true;
+// car.forSale = true;
 
-console.log(car[myCarColor])
+// console.log(car[myCarColor])
 
-console.log(car)
+// console.log(car)
 
 
 
@@ -553,16 +553,164 @@ console.log(car)
 
 //   console.log(object)
 
-let company = {
-   companyName: "Healthy Candy",
-   activity: "food manufacturing",
-   address: {
-      street: "2nd street",
-      number: "123",
-      zipcode: "33116",
-      city: "Miami",
-      state: "Florida"
-   },
-   yearOfEstablishment: 2021
-};
-console.log(company.address.number)
+// let company = {
+//    companyName: "Healthy Candy",
+//    activity: "food manufacturing",
+//    address: {
+//       street: "2nd street",
+//       number: "123",
+//       zipcode: "33116",
+//       city: "Miami",
+//       state: "Florida"
+//    },
+//    yearOfEstablishment: 2021
+// };
+// console.log(company.address.number)
+
+// company = {
+//    companyName: "Healthy Candy",
+//    activities: ["food manufacturing",
+//       "improving kids' health", "manufacturing toys"],
+//    address: {
+//       street: "2nd street",
+//       number: "123",
+//       zipcode: "33116",
+//       city: "Miami",
+//       state: "Florida"
+//    },
+//    yearOfEstablishment: 2021
+// };
+
+// console.log(company.activities[2])
+
+// let addresses = [{
+//    street: "2nd street",
+//    number: "123",
+//    zipcode: "33116",
+//    city: "Miami",
+//    state: "Florida"
+// },
+// {
+//    street: "1st West avenue",
+//    number: "5",
+//    zipcode: "75001",
+//    city: "Addison",
+//    state: "Texas"
+// }];
+
+// console.log(addresses[1].state)
+
+
+// let company = {
+//    companyName: "Healthy Candy",
+//    activities: ["food manufacturing",
+//       "improving kids' health",
+//       "manufacturing toys"],
+//    address: [{
+//       street: "2nd street",
+//       number: "123",
+//       zipcode: "33116",
+//       city: "Miami",
+//       state: "Florida"
+//    },
+//    {
+//       street: "1st West avenue",
+//       number: "5",
+//       zipcode: "75001",
+//       city: "Addison",
+//       state: "Texas"
+//    }],
+//    yearOfEstablishment: 2021
+// };
+
+// console.log(company.address[0].city)
+// console.log(company.address[1].zipcode)
+
+
+// let people = {
+//    friends:[]
+// }
+
+// let friend1 = {
+//    firstName:"hamza",
+//    lastName:"owais",
+//    id:12
+// }
+// let friend2 = {
+//    firstName:"zeeshan",
+//    lastName:"khan",
+//    id:122
+// }
+// let friend3 = {
+//    firstName:"daniyal",
+//    lastName:"umar",
+//    id:123
+// }
+// console.log(people)
+
+// people.friends.push(friend1 , friend2 , friend3)
+
+// console.log(people)
+
+// const myArr2 = [];
+// myArr2[10] = 'test'
+// console.log(myArr2);
+// console.log(myArr2[2]);
+
+// const myArr3 = [3,6,8,9,3,55,553,434];
+// myArr3.sort();
+// myArr3.length = 0;
+// console.log(myArr3)
+// console.log(myArr3[0]);
+
+
+// let array = [87,56,78,89,85,98,90,96,94,34]
+// console.log(array.length)
+
+// let number = 0;
+
+// for(number; number < array.length; number++){
+
+   
+// if(array[number] > 80){
+//    console.log(`student ${number} you are passed`)
+// }
+// else if(array[number] <80){
+//    console.log(`student ${number} you are failed`)
+// }
+
+
+
+// }
+
+// console.log('hello world')
+
+
+// let findEvenOrOdd = 11%2
+// console.log(findEvenOrOdd)
+
+
+// let myArray = [];
+// console.log(myArray)
+//   for(let i=0; i<10; i++){
+//       let findEvenOrOdd = i%2
+//       // console.log(findEvenOrOdd)
+//    let object=  {
+//       name: `Lesson ${i}`,
+//       status: findEvenOrOdd === 0 ? true : false 
+//    }
+//    myArray.push(object)
+//   }
+//   console.log(myArray)
+
+
+
+
+//   for(let i=0; i<5; i++){
+//   console.log('i am I value ' , i)
+
+//   for(let j=0; j<3; j++){
+//    console.log('i am j value ' , j)
+
+//   }
+//   }
