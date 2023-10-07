@@ -671,7 +671,6 @@
 
 // for(number; number < array.length; number++){
 
-   
 // if(array[number] > 80){
 //    console.log(`student ${number} you are passed`)
 // }
@@ -704,13 +703,422 @@
 //   console.log(myArray)
 
 
-
-
 //   for(let i=0; i<5; i++){
 //   console.log('i am I value ' , i)
 
 //   for(let j=0; j<3; j++){
 //    console.log('i am j value ' , j)
 
+//  }
 //   }
+
+
+// =================while loops=====================
+
+// let number = 0;
+
+// while(number < 5){
+//     console.log("hello" , number)
+//     number++
+// }
+
+
+
+
+
+
+
+// let number = 0 // 5
+// let someArray = ["Mike", "Antal", "Marc", "Emir", "Louiza", "Jac"]
+// while ( number < 6) {
+//  if (someArray[0] === "Louiza") {
+//  console.log("Found her!");
+//  console.log(someArray)
+//  } else {
+//  someArray.shift();
+//  }
+//  number++
+// }
+
+
+
+
+// let max = 5;
+// let correct = true;
+// while (correct) {
+//     let ranNumber = Math.floor(Math.random() * max) + 1;
+//     console.log(ranNumber);
+//     let guess = prompt("Guess a Number 1 - " + max );
+//     guess = Number(guess);
+//     if (guess === ranNumber) {
+//         correct = false;
+//         console.log("You got it " + ranNumber);
+//     } else if (guess > ranNumber) {
+//         console.log("Too high");
+//     } else {
+//         console.log("Too Low");
+//     }
+
+
+// }
+
+
+
+// =====do while ==========
+
+// let number;
+// do {
+//  number = prompt("Please enter a number between 0 and 100: ");
+// } while ((number >= 0 && number < 100));
+
+// console.log(number)
+
+
+let names = ["Chantal", "John", "Maxime", "Bobbi","Jair" , "zubair"];
+
+// for (let name of names){
+
+//  console.log(name);
+
+
+// }
+
+
+// for (let i = 0; i<names.length; i++){
+//     console.log(names[i]);
+//    }
+
+// let car = {
+//     model: "Golf",
+//     make: "Volkswagen",
+//     year: 1999,
+//     color: "black",
+//    };
+
+//    console.log(car["year"])
+//    console.log(car.year)
+
+// let array = []
+//    for(let key in car){
+//     console.log(key , car[key])
+//     array.push(`${key} , ${car[key]}`)
+//    }
+// console.log(array)
+
+// let arrKeys = Object.keys(car)
+// let arrValues = Object.values(car)
+
+// console.log(arrKeys)
+// console.log(arrValues)
+
+// for(let key of arrKeys){
+//     console.log(key)
+// }
+// for(let value of arrValues){
+//     console.log(value)
+// }
+
+
+// let car = {
+//     model: "Golf",
+//     make: "Volkswagen",
+//     year: 1999,
+//    };
+
+
+// let newArray = Object.entries(car);
+
+// console.log(newArray)
+
+// for (const [key, value] of Object.entries(car)) {
+//     console.log(key, ":", value);
+//    }
+   
+//    for (let i = 0; i < 10; i++) {
+//     console.log(i);
+//     // if (i === 4) {
+//     // break;
+//     // }
+//    }
+//    let cars = [
+//     {
+//         year:2020,
+//         color:'pink',
+//    },{
+//     year:2019,
+//     color:'pink',
+// },
+// {
+//     year:2020,
+//     color:'black',
+// },
+// {
+//     year:2020,
+//     color:'black',
+// }]
+
+// for (let i = 0; i < cars.length; i++) {
+//     if (cars[i].year >= 2020) {
+//     if (cars[i].color === "black") {
+//     console.log("I have found my new car:", cars[i]);
+//     console.log(i)
+//    continue;
+//     }
+//     }
+//    }
+   
+
+
+//    ===================function============================
+
+// function sayHello(){
+
+//     let name = prompt("Enter your name:");
+//     console.log("Hello" , name)
+
+
+// }
+// let sayHello2 = function(){
+
+//     let name = prompt("Enter your name:");
+//     console.log("Hello" , name)
+
+
+// }
+
+
+// sayHello();
+// sayHello2();
+
+// let name;
+// console.log(name)
+
+
+
+// function tester(a , b){
+//   let result = a + b
+//   return result;
+//    }
+//   let a = tester(2,2)
+//    console.log("a" , a)
+
+
+
+
+  // let number = prompt("Enter your number")
+//   let age = prompt("age")
+
+//   console.log(tester(num)) ;
+
+
+  // if(a > 3){
+  //   console.log("your result is greater than three")
+  // }
+
+
+  // let array = ['hi' , 'hello' , 'by']
+  // function greeting(name){
+  //   let randomNumber  = Math.floor(Math.random() * array.length);
+  //   console.log(name , array[randomNumber])
+  // }
+  // greeting(prompt("enter your name:"));
+
+
+
+  // function greeting(number = 1){
+  //   console.log(number)
+  //   console.log(number * 10)
+  // }
+  // let number1 = prompt("enter your number:")
+  // console.log(number1)
+  // greeting();
+
+  // function addTwoNumbers(x = 12 , y = 10) {
+  //   console.log(x + y);
+  //  }
+   
+  //  addTwoNumbers(2,2)
+
+  // let doingArrowStuff = (x , y) => {
+  //   let name = prompt("enter your name")
+  //   console.log(name)
+  //    return x+y
+  //  };
+   
+  //  console.log(doingArrowStuff(2,3));
+
+
+  // let arr1 = ['zubair' , 'junaid']
+  // let arr2 = ['asim' , 'ahmed' , ...arr1]
+  // console.log(arr2)
+
+  // function addTwoNumbers(x, y , z) {
+  //   console.log(x + y + z);
+  //  }
+  //  let arr = [5,9,9];
+  //  addTwoNumbers(...arr);
+   
+
+  // function someFunction(param1, param2) {
+  //   console.log(param1, param2);
+  //  }
+  //  someFunction("hi", "there!", "How are you?");
+
+//    function someFunction(param1, ...param2) {
+//     console.log(param1, param2);
+//    }
+//    someFunction("hi", "there!", "How are you?")
+   
+
+//    function addTwoNumbers(x, y) {
+//     console.log(x + y);
+//     return x+y
+//    }
+//    let result = addTwoNumbers(4, 5);
+// console.log(result);
+
+
+// function testAvailability() {
+//     let y = "I'll return";
+//     console.log("Available here:", y);
+//     return y;
+//    }
+
+
+
+
+//    let z = testAvailability();
+//    console.log("Outside the function:", z);
+//    console.log("Not available here:", y);
+   
+// let globalVariable = "zubair"
+
+// function doingStuff() {
+//   var a = "zubair";
+//   let b = "junaid"
+
+
+//     if (true) {
+//     let y = "asim"
+//     var x = "local";
+//      console.log(a)
+//      console.log(y);
+
+//     } 
+//     console.log(x);
+//     console.log(b);
+//    }
+//    doingStuff();
+
+  //  (function () {
+  //   console.log("IIFE!");
+  //  })();
+   
+
+  // function getRecursive(nr) {
+
+
+  //   console.log(nr);
+
+  //   if (nr < 5) {
+
+  //   getRecursive(++nr);
+
+  //   }
+
+  
+  //  }
+
+
+  //  getRecursive(1);
+   
+
+//   function caculateFactorial(nr){
+
+//    console.log(nr)
+//     if(nr === 0){
+//       return 1
+//     }
+    
+//     else{
+//        return nr * caculateFactorial(--nr)
+//     }
+
 //   }
+
+//  console.log(caculateFactorial(nr1))
+
+
+// function doOuterFunctionStuff(nr) {
+
+
+//   console.log("Outer function");
+
+//   doInnerFunctionStuff(2);
+
+  
+//   function doInnerFunctionStuff(x) {
+//   console.log(x + 7);
+//   console.log("I can access outer variables:", nr);
+//   }
+//  }
+
+
+//  doOuterFunctionStuff(2);
+
+// let functionVariable = function (x) {
+
+//   console.log(x);
+//   console.log("Not so secret though.");
+//  };
+
+
+//  function doFlexibleStuff(executeStuff) {
+//   executeStuff(2);
+//   console.log("Inside doFlexibleStuffFunction.");
+//  }
+//  doFlexibleStuff(functionVariable)
+
+
+//  class Math{
+
+//     random(){
+
+//     }
+//  }
+
+//  prompt()
+
+
+// ==========================Date Method=================
+
+// let getCurrentTimeAndDate = new Date();
+// console.log(getCurrentTimeAndDate)
+
+// let now2 = Date.now();
+// console.log(now2);
+
+// let milliDate = new Date(1000);
+// console.log(milliDate);
+
+
+// let d = new Date();
+
+// console.log("Day of week:", d.getDay());
+// console.log("Day of month:", d.getDate());
+// console.log("Month:", d.getMonth());
+// console.log("Year:", d.getFullYear());
+// console.log("Seconds:", d.getSeconds());
+// console.log("Milliseconds:", d.getMilliseconds());
+// console.log("Time:", d.getTime());
+// console.log("hour:", d.getHours());
+// console.log("hour:", d.getMinutes());
+// console.log("hour:", d.toLocaleTimeString());
+
+
+
+// let result = "Hello,JavaScript,and,python";
+// let arr_result = result.split(",");
+// console.log(arr_result);
+
+
