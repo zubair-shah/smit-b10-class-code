@@ -1,6 +1,7 @@
+//change keys according to your project
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyCjZaao-RzoVFiIfdraMDk0cuecfAJoCTM",
-    authDomain: "learning-firebase-with-zubair.firebaseapp.com",
+    authDomain: "learning-firebase-with-zubair.firebaseapp.com",  
     projectId: "learning-firebase-with-zubair",
     storageBucket: "learning-firebase-with-zubair.appspot.com",
     messagingSenderId: "390051158100",
