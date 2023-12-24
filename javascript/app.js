@@ -722,12 +722,6 @@
 //     number++
 // }
 
-
-
-
-
-
-
 // let number = 0 // 5
 // let someArray = ["Mike", "Antal", "Marc", "Emir", "Louiza", "Jac"]
 // while ( number < 6) {
@@ -1120,5 +1114,128 @@ let names = ["Chantal", "John", "Maxime", "Bobbi","Jair" , "zubair"];
 // let result = "Hello,JavaScript,and,python";
 // let arr_result = result.split(",");
 // console.log(arr_result);
+
+
+// let caps = "HI HOW ARE YOU?";
+// let fixed_caps = caps.toLowerCase();
+// console.log(fixed_caps)
+// let first_capital = fixed_caps.charAt(0).toUpperCase().concat(fixed_caps.slice(1))
+// console.log(first_capital);
+
+
+// let val = "I love JavaScript";
+// val = val.toLowerCase();
+// let vowels = ["a", "e", "i", "o", "u"];
+//   for(let i = 0; i<vowels.length; i++){
+//    console.log(i)
+//     val = val.replaceAll(vowels[i], i);
+//   }
+// console.log(val);
+
+// console.log(10 / 0);
+
+
+// let highest = Math.max(2, 56, 12, 1, 233, 4);
+// console.log(highest);
+// let lowest = Math.min(2, 56, 12, 1, 233, 4);
+// console.log(lowest);
+
+// let highestOfWords = Math.max("hi", 3, "bye");
+// console.log(highestOfWords);
+
+// let result = Math.sqrt(64);
+// console.log(result);
+
+// let result2 = Math.pow(2, 2);
+// console.log(result2);
+
+
+// let x = 7.78;
+let y = 5.34;
+
+
+// console.log("X:", x, "becomes", Math.round(x));
+// console.log("Y:", y, "becomes", Math.round(y));
+
+// let x = Math.PI
+// console.log(x)
+// 
+// function ranNum(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// for (let x = 0; x < 100; x++) {
+//   console.log(ranNum(1, 100));
+// }
+
+// let arr = ["grapefruit", 4, "hello", 5.6, true];
+
+// function printStuff(element, index) {
+//  console.log("Printing stuff:", element, "on array position:" , index)
+// }
+
+// printStuff(arr[0] , 0)
+
+
+// arr.forEach((a , b)  => {
+//   console.log("Printing stuff:", a, "on array position:" , b)
+// })
+
+// let arr = ["2", 5, 4, new Date(), true];
+
+// function checkString(element, index) {
+//  if(typeof element === "string"){
+//   return element 
+//  }
+// }
+
+// let filterArr = arr.filter((element , index) => {
+//   if(typeof element === "string"){
+//     return element 
+//    }
+// });
+// console.log(filterArr);
+
+
+// let arr = [1, 2, 3, 4];
+// let mapped_arr = arr.map((zubair , index) => {
+//  return (zubair + 1)
+// });
+// console.log(mapped_arr);
+
+// const arr = [
+//   "zubair",
+//   "junaid",
+//   "ali",
+//   "hamza",
+//   "zubair",
+//   "noor",
+//   "asghar",
+//   "haziq",
+//   "junaid",
+//   "malik",
+//   "owais",
+// ];
+// const arr2 = arr.filter((value, index) => {
+//   return arr.indexOf(value) === index;
+// });
+// console.log(arr2);
+// const arr = ["hi","world","hello","hii","hi","hi World","Hi"]
+// console.log(arr.lastIndexOf("hi"));
+
+// const arr = ["Hi","world","hello","Hii","hi","hi World","Hi"]
+// const arr2 = arr.filter((element,index)=>{
+//  const ele2 = element.substring(0, 2);
+//  return (ele2 == "hi");
+// });
+// console.log(arr2);
+
+const ele1 = document.querySelectorAll("h1");
+const ele3 = document.querySelectorAll("h1");
+// const ele2 = document.body.children.greeting.innerText = "Bye!";
+
+console.dir(ele1);
+
+
 
 
