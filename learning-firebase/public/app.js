@@ -28,8 +28,16 @@ const db = firebaseApp.firestore();
 
     auth.createUserWithEmailAndPassword(email , password)
     .then((res) => {
-        alert("singup succes")
+      //   alert("singup succes")
        console.log(res)
+
+       createData()
+       if(res){
+         setTimeout(() => {
+            location.href = "./dashboard.html"
+        },2000)
+       }
+    
     })
     .catch((error) => {
         alert(error)
@@ -99,9 +107,13 @@ const db = firebaseApp.firestore();
          return { ...item.data() , id: item.id}
      })
      console.log(data)
+
+     let list = document.getElementById('list');
+
      data.forEach((item) => {
-      let list = document.getElementById('list');
-         list.innerHTML = `<li >${item.name} <button class='delete'>delete</button></li>`
+         let listItem = document.createElement('li')
+         listItem.innerHTML = `${item.name} <button class='delete' data-index="${item.id}" onClick="deleteData(this)">delete</button>`
+         list.appendChild(listItem)
      })
  
      })
@@ -111,10 +123,12 @@ const db = firebaseApp.firestore();
 
   }
 
-  function deleteData(id){
-console.log(id)
+  function deleteData(event){
+     console.log("event" , event)
+   let id = event.getAttribute("data-index")
+   console.log('id' , id)
     db.collection('users')
-    .doc('0AFg1VBZS1ywCvWvTwTJ')
+    .doc(id)
     .delete()
     .then((res) => {
         alert("Data Deleted")
