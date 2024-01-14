@@ -1,10 +1,10 @@
-import Header from "./Header";
+import SearchParams from "./components/SearchParams";
 function App(){
     return(
-        <h1>
-            <Header />
-            Hello! We are Learning react
-        </h1>
+      <div>
+        <h1>Adopt Me!</h1>
+        <SearchParams />
+      </div>
     )
 }
 

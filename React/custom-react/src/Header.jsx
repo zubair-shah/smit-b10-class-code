@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Header() {
+function Header({nav}) {
   return (
-    <div>Header</div>
+    <div>
+      {nav}
+    </div>
   )
 }
 
