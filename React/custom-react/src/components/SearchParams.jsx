@@ -1,15 +1,38 @@
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
+import Pets from './Pets'
 const ANIMALS = ['dog','cat','bird','reptile','rabbit']
 
 function SearchParams() {
     const [location , setLocation] = useState('')
     const [animal , setAnimal] = useState('')
     const [breed , setBreed] = useState('')
+    const [pets , setPets] = useState([])
     const breeds = [];
     // const location = ''
     console.log(location)
     console.log(animal)
     console.log(breed)
+
+useEffect(() => {
+requestPets()
+} , [location , animal])
+
+async function requestPets(){
+  const response = await fetch(`http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`)
+  const data = await response.json();
+  setPets(data.pets)
+ console.log('data' , data)
+}
+
+// let newData = ['zubair' , "junaid" , "owais"]
+// newData.map((item , ind) => console.log(item))
+console.log(pets)
+// pets.map((item , ind) => console.log(item.name))
+
+
+
+
+
   return (
     <div className='search-params'>
         <form>
@@ -47,7 +70,13 @@ function SearchParams() {
                 }
              </select>
             </label>
+            <button>submit</button>
         </form>
+         {
+          pets.map((item , ind) => {
+          return <Pets name={item.name} animal={item.animal} breed={item.breed} location={item.state} key={item.id} images={item.images} />})
+         }
+      
     </div>
   )
 }
