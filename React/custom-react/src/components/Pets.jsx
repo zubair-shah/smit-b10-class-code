@@ -1,6 +1,5 @@
 
 function Pets({name , animal , breed , location , images}){
-  console.log(images)
   return (
   <a className="pet">
     <div className="image-container">

@@ -1,21 +1,20 @@
 import { useState , useEffect } from 'react'
+import useBreedList from '../hooks/useBreedList'
 import Pets from './Pets'
-const ANIMALS = ['dog','cat','bird','reptile','rabbit']
+const ANIMALS = ['' , 'dog','cat','bird','reptile','rabbit']
 
 function SearchParams() {
     const [location , setLocation] = useState('')
     const [animal , setAnimal] = useState('')
     const [breed , setBreed] = useState('')
     const [pets , setPets] = useState([])
-    const breeds = [];
-    // const location = ''
-    console.log(location)
-    console.log(animal)
-    console.log(breed)
+    const [breeds] = useBreedList(animal)
+    console.log("breeds" , breeds)
 
 useEffect(() => {
 requestPets()
-} , [location , animal])
+
+} , [location , animal , breed])
 
 async function requestPets(){
   const response = await fetch(`http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`)
@@ -24,15 +23,21 @@ async function requestPets(){
  console.log('data' , data)
 }
 
+
+
 // let newData = ['zubair' , "junaid" , "owais"]
 // newData.map((item , ind) => console.log(item))
-console.log(pets)
+
 // pets.map((item , ind) => console.log(item.name))
 
+console.log("location" , location)
+console.log("animal" , animal)
 
+console.log("pets" , pets)
 
-
-
+if(breeds.status === "loading"){
+  return <div> <h1>loading...</h1></div>
+}
   return (
     <div className='search-params'>
         <form>
@@ -61,16 +66,16 @@ console.log(pets)
              <select name="breed"  id="breed" 
               value={breed}
              onChange={(e) => setBreed(e.target.value)}
-             disabled={breeds.length < 1}
+             disabled={breeds.data.length < 1}
              >
                 {
-                  breeds.map((item,ind) => (
+                  breeds.data.map((item,ind) => (
                  <option value={item} key={ind}>{item}</option>
                   ))  
                 }
              </select>
             </label>
-            <button>submit</button>
+            <button type='submit'>submit</button>
         </form>
          {
           pets.map((item , ind) => {
