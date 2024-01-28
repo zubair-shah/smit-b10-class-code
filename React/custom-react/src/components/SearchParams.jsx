@@ -1,6 +1,7 @@
 import { useState , useEffect } from 'react'
 import useBreedList from '../hooks/useBreedList'
-import Pets from './Pets'
+// import Pets from './Pets'
+import Results from './Results'
 const ANIMALS = ['' , 'dog','cat','bird','reptile','rabbit']
 
 function SearchParams() {
@@ -13,8 +14,7 @@ function SearchParams() {
 
 useEffect(() => {
 requestPets()
-
-} , [location , animal , breed])
+} , [])
 
 async function requestPets(){
   const response = await fetch(`http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`)
@@ -40,7 +40,10 @@ if(breeds.status === "loading"){
 }
   return (
     <div className='search-params'>
-        <form>
+        <form onSubmit={(e) => {
+          e.preventDefault();
+          requestPets();
+        }}>
             <label htmlFor="location">
             <input type="text" id='location' name='location' value={location} 
                 placeholder='Location'
@@ -77,10 +80,12 @@ if(breeds.status === "loading"){
             </label>
             <button type='submit'>submit</button>
         </form>
-         {
+
+        <Results pets={pets} />
+         {/* {
           pets.map((item , ind) => {
           return <Pets name={item.name} animal={item.animal} breed={item.breed} location={item.state} key={item.id} images={item.images} />})
-         }
+         } */}
       
     </div>
   )
