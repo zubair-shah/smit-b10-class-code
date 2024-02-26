@@ -511,14 +511,14 @@
 // console.log(complexArray[2][2][1])
 
 
-let array = ["zubair", 23, false]
+// let array = ["zubair", 23, false]
 // console.log(array[0]);
 
-let object = {
-   name: "zubair",
-   age: 23,
-   married: false
-}
+// let object = {
+//    name: "zubair",
+//    age: 23,
+//    married: false
+// }
 // console.log(array)
 // console.log(object)
 // console.log("getting from array" , array[0]);
@@ -528,21 +528,21 @@ let object = {
 // console.log("getting from objet" , object.age)
 // console.log("getting from objet" , object.married)
 
-let car = {
-   model: 2023,
-   brandName: "Volvo",
-   color: "blue",
-}
+// let car = {
+//    model: 2023,
+//    brandName: "Volvo",
+//    color: "blue",
+// }
 
-let myCarColor = "color"
+// let myCarColor = "color"
 
-car[myCarColor] = "yellow"
+// car[myCarColor] = "yellow"
 
-car.forSale = true;
+// car.forSale = true;
 
-console.log(car[myCarColor])
+// console.log(car[myCarColor])
 
-console.log(car)
+// console.log(car)
 
 
 
@@ -553,16 +553,689 @@ console.log(car)
 
 //   console.log(object)
 
-let company = {
-   companyName: "Healthy Candy",
-   activity: "food manufacturing",
-   address: {
-      street: "2nd street",
-      number: "123",
-      zipcode: "33116",
-      city: "Miami",
-      state: "Florida"
-   },
-   yearOfEstablishment: 2021
-};
-console.log(company.address.number)
+// let company = {
+//    companyName: "Healthy Candy",
+//    activity: "food manufacturing",
+//    address: {
+//       street: "2nd street",
+//       number: "123",
+//       zipcode: "33116",
+//       city: "Miami",
+//       state: "Florida"
+//    },
+//    yearOfEstablishment: 2021
+// };
+// console.log(company.address.number)
+
+// company = {
+//    companyName: "Healthy Candy",
+//    activities: ["food manufacturing",
+//       "improving kids' health", "manufacturing toys"],
+//    address: {
+//       street: "2nd street",
+//       number: "123",
+//       zipcode: "33116",
+//       city: "Miami",
+//       state: "Florida"
+//    },
+//    yearOfEstablishment: 2021
+// };
+
+// console.log(company.activities[2])
+
+// let addresses = [{
+//    street: "2nd street",
+//    number: "123",
+//    zipcode: "33116",
+//    city: "Miami",
+//    state: "Florida"
+// },
+// {
+//    street: "1st West avenue",
+//    number: "5",
+//    zipcode: "75001",
+//    city: "Addison",
+//    state: "Texas"
+// }];
+
+// console.log(addresses[1].state)
+
+
+// let company = {
+//    companyName: "Healthy Candy",
+//    activities: ["food manufacturing",
+//       "improving kids' health",
+//       "manufacturing toys"],
+//    address: [{
+//       street: "2nd street",
+//       number: "123",
+//       zipcode: "33116",
+//       city: "Miami",
+//       state: "Florida"
+//    },
+//    {
+//       street: "1st West avenue",
+//       number: "5",
+//       zipcode: "75001",
+//       city: "Addison",
+//       state: "Texas"
+//    }],
+//    yearOfEstablishment: 2021
+// };
+
+// console.log(company.address[0].city)
+// console.log(company.address[1].zipcode)
+
+
+// let people = {
+//    friends:[]
+// }
+
+// let friend1 = {
+//    firstName:"hamza",
+//    lastName:"owais",
+//    id:12
+// }
+// let friend2 = {
+//    firstName:"zeeshan",
+//    lastName:"khan",
+//    id:122
+// }
+// let friend3 = {
+//    firstName:"daniyal",
+//    lastName:"umar",
+//    id:123
+// }
+// console.log(people)
+
+// people.friends.push(friend1 , friend2 , friend3)
+
+// console.log(people)
+
+// const myArr2 = [];
+// myArr2[10] = 'test'
+// console.log(myArr2);
+// console.log(myArr2[2]);
+
+// const myArr3 = [3,6,8,9,3,55,553,434];
+// myArr3.sort();
+// myArr3.length = 0;
+// console.log(myArr3)
+// console.log(myArr3[0]);
+
+
+// let array = [87,56,78,89,85,98,90,96,94,34]
+// console.log(array.length)
+
+// let number = 0;
+
+// for(number; number < array.length; number++){
+
+// if(array[number] > 80){
+//    console.log(`student ${number} you are passed`)
+// }
+// else if(array[number] <80){
+//    console.log(`student ${number} you are failed`)
+// }
+
+
+
+// }
+
+// console.log('hello world')
+
+
+// let findEvenOrOdd = 11%2
+// console.log(findEvenOrOdd)
+
+
+// let myArray = [];
+// console.log(myArray)
+//   for(let i=0; i<10; i++){
+//       let findEvenOrOdd = i%2
+//       // console.log(findEvenOrOdd)
+//    let object=  {
+//       name: `Lesson ${i}`,
+//       status: findEvenOrOdd === 0 ? true : false 
+//    }
+//    myArray.push(object)
+//   }
+//   console.log(myArray)
+
+
+//   for(let i=0; i<5; i++){
+//   console.log('i am I value ' , i)
+
+//   for(let j=0; j<3; j++){
+//    console.log('i am j value ' , j)
+
+//  }
+//   }
+
+
+// =================while loops=====================
+
+// let number = 0;
+
+// while(number < 5){
+//     console.log("hello" , number)
+//     number++
+// }
+
+// let number = 0 // 5
+// let someArray = ["Mike", "Antal", "Marc", "Emir", "Louiza", "Jac"]
+// while ( number < 6) {
+//  if (someArray[0] === "Louiza") {
+//  console.log("Found her!");
+//  console.log(someArray)
+//  } else {
+//  someArray.shift();
+//  }
+//  number++
+// }
+
+
+
+
+// let max = 5;
+// let correct = true;
+// while (correct) {
+//     let ranNumber = Math.floor(Math.random() * max) + 1;
+//     console.log(ranNumber);
+//     let guess = prompt("Guess a Number 1 - " + max );
+//     guess = Number(guess);
+//     if (guess === ranNumber) {
+//         correct = false;
+//         console.log("You got it " + ranNumber);
+//     } else if (guess > ranNumber) {
+//         console.log("Too high");
+//     } else {
+//         console.log("Too Low");
+//     }
+
+
+// }
+
+
+
+// =====do while ==========
+
+// let number;
+// do {
+//  number = prompt("Please enter a number between 0 and 100: ");
+// } while ((number >= 0 && number < 100));
+
+// console.log(number)
+
+
+let names = ["Chantal", "John", "Maxime", "Bobbi","Jair" , "zubair"];
+
+// for (let name of names){
+
+//  console.log(name);
+
+
+// }
+
+
+// for (let i = 0; i<names.length; i++){
+//     console.log(names[i]);
+//    }
+
+// let car = {
+//     model: "Golf",
+//     make: "Volkswagen",
+//     year: 1999,
+//     color: "black",
+//    };
+
+//    console.log(car["year"])
+//    console.log(car.year)
+
+// let array = []
+//    for(let key in car){
+//     console.log(key , car[key])
+//     array.push(`${key} , ${car[key]}`)
+//    }
+// console.log(array)
+
+// let arrKeys = Object.keys(car)
+// let arrValues = Object.values(car)
+
+// console.log(arrKeys)
+// console.log(arrValues)
+
+// for(let key of arrKeys){
+//     console.log(key)
+// }
+// for(let value of arrValues){
+//     console.log(value)
+// }
+
+
+// let car = {
+//     model: "Golf",
+//     make: "Volkswagen",
+//     year: 1999,
+//    };
+
+
+// let newArray = Object.entries(car);
+
+// console.log(newArray)
+
+// for (const [key, value] of Object.entries(car)) {
+//     console.log(key, ":", value);
+//    }
+   
+//    for (let i = 0; i < 10; i++) {
+//     console.log(i);
+//     // if (i === 4) {
+//     // break;
+//     // }
+//    }
+//    let cars = [
+//     {
+//         year:2020,
+//         color:'pink',
+//    },{
+//     year:2019,
+//     color:'pink',
+// },
+// {
+//     year:2020,
+//     color:'black',
+// },
+// {
+//     year:2020,
+//     color:'black',
+// }]
+
+// for (let i = 0; i < cars.length; i++) {
+//     if (cars[i].year >= 2020) {
+//     if (cars[i].color === "black") {
+//     console.log("I have found my new car:", cars[i]);
+//     console.log(i)
+//    continue;
+//     }
+//     }
+//    }
+   
+
+
+//    ===================function============================
+
+// function sayHello(){
+
+//     let name = prompt("Enter your name:");
+//     console.log("Hello" , name)
+
+
+// }
+// let sayHello2 = function(){
+
+//     let name = prompt("Enter your name:");
+//     console.log("Hello" , name)
+
+
+// }
+
+
+// sayHello();
+// sayHello2();
+
+// let name;
+// console.log(name)
+
+
+
+// function tester(a , b){
+//   let result = a + b
+//   return result;
+//    }
+//   let a = tester(2,2)
+//    console.log("a" , a)
+
+
+
+
+  // let number = prompt("Enter your number")
+//   let age = prompt("age")
+
+//   console.log(tester(num)) ;
+
+
+  // if(a > 3){
+  //   console.log("your result is greater than three")
+  // }
+
+
+  // let array = ['hi' , 'hello' , 'by']
+  // function greeting(name){
+  //   let randomNumber  = Math.floor(Math.random() * array.length);
+  //   console.log(name , array[randomNumber])
+  // }
+  // greeting(prompt("enter your name:"));
+
+
+
+  // function greeting(number = 1){
+  //   console.log(number)
+  //   console.log(number * 10)
+  // }
+  // let number1 = prompt("enter your number:")
+  // console.log(number1)
+  // greeting();
+
+  // function addTwoNumbers(x = 12 , y = 10) {
+  //   console.log(x + y);
+  //  }
+   
+  //  addTwoNumbers(2,2)
+
+  // let doingArrowStuff = (x , y) => {
+  //   let name = prompt("enter your name")
+  //   console.log(name)
+  //    return x+y
+  //  };
+   
+  //  console.log(doingArrowStuff(2,3));
+
+
+  // let arr1 = ['zubair' , 'junaid']
+  // let arr2 = ['asim' , 'ahmed' , ...arr1]
+  // console.log(arr2)
+
+  // function addTwoNumbers(x, y , z) {
+  //   console.log(x + y + z);
+  //  }
+  //  let arr = [5,9,9];
+  //  addTwoNumbers(...arr);
+   
+
+  // function someFunction(param1, param2) {
+  //   console.log(param1, param2);
+  //  }
+  //  someFunction("hi", "there!", "How are you?");
+
+//    function someFunction(param1, ...param2) {
+//     console.log(param1, param2);
+//    }
+//    someFunction("hi", "there!", "How are you?")
+   
+
+//    function addTwoNumbers(x, y) {
+//     console.log(x + y);
+//     return x+y
+//    }
+//    let result = addTwoNumbers(4, 5);
+// console.log(result);
+
+
+// function testAvailability() {
+//     let y = "I'll return";
+//     console.log("Available here:", y);
+//     return y;
+//    }
+
+
+
+
+//    let z = testAvailability();
+//    console.log("Outside the function:", z);
+//    console.log("Not available here:", y);
+   
+// let globalVariable = "zubair"
+
+// function doingStuff() {
+//   var a = "zubair";
+//   let b = "junaid"
+
+
+//     if (true) {
+//     let y = "asim"
+//     var x = "local";
+//      console.log(a)
+//      console.log(y);
+
+//     } 
+//     console.log(x);
+//     console.log(b);
+//    }
+//    doingStuff();
+
+  //  (function () {
+  //   console.log("IIFE!");
+  //  })();
+   
+
+  // function getRecursive(nr) {
+
+
+  //   console.log(nr);
+
+  //   if (nr < 5) {
+
+  //   getRecursive(++nr);
+
+  //   }
+
+  
+  //  }
+
+
+  //  getRecursive(1);
+   
+
+//   function caculateFactorial(nr){
+
+//    console.log(nr)
+//     if(nr === 0){
+//       return 1
+//     }
+    
+//     else{
+//        return nr * caculateFactorial(--nr)
+//     }
+
+//   }
+
+//  console.log(caculateFactorial(nr1))
+
+
+// function doOuterFunctionStuff(nr) {
+
+
+//   console.log("Outer function");
+
+//   doInnerFunctionStuff(2);
+
+  
+//   function doInnerFunctionStuff(x) {
+//   console.log(x + 7);
+//   console.log("I can access outer variables:", nr);
+//   }
+//  }
+
+
+//  doOuterFunctionStuff(2);
+
+// let functionVariable = function (x) {
+
+//   console.log(x);
+//   console.log("Not so secret though.");
+//  };
+
+
+//  function doFlexibleStuff(executeStuff) {
+//   executeStuff(2);
+//   console.log("Inside doFlexibleStuffFunction.");
+//  }
+//  doFlexibleStuff(functionVariable)
+
+
+//  class Math{
+
+//     random(){
+
+//     }
+//  }
+
+//  prompt()
+
+
+// ==========================Date Method=================
+
+// let getCurrentTimeAndDate = new Date();
+// console.log(getCurrentTimeAndDate)
+
+// let now2 = Date.now();
+// console.log(now2);
+
+// let milliDate = new Date(1000);
+// console.log(milliDate);
+
+
+// let d = new Date();
+
+// console.log("Day of week:", d.getDay());
+// console.log("Day of month:", d.getDate());
+// console.log("Month:", d.getMonth());
+// console.log("Year:", d.getFullYear());
+// console.log("Seconds:", d.getSeconds());
+// console.log("Milliseconds:", d.getMilliseconds());
+// console.log("Time:", d.getTime());
+// console.log("hour:", d.getHours());
+// console.log("hour:", d.getMinutes());
+// console.log("hour:", d.toLocaleTimeString());
+
+
+
+// let result = "Hello,JavaScript,and,python";
+// let arr_result = result.split(",");
+// console.log(arr_result);
+
+
+// let caps = "HI HOW ARE YOU?";
+// let fixed_caps = caps.toLowerCase();
+// console.log(fixed_caps)
+// let first_capital = fixed_caps.charAt(0).toUpperCase().concat(fixed_caps.slice(1))
+// console.log(first_capital);
+
+
+// let val = "I love JavaScript";
+// val = val.toLowerCase();
+// let vowels = ["a", "e", "i", "o", "u"];
+//   for(let i = 0; i<vowels.length; i++){
+//    console.log(i)
+//     val = val.replaceAll(vowels[i], i);
+//   }
+// console.log(val);
+
+// console.log(10 / 0);
+
+
+// let highest = Math.max(2, 56, 12, 1, 233, 4);
+// console.log(highest);
+// let lowest = Math.min(2, 56, 12, 1, 233, 4);
+// console.log(lowest);
+
+// let highestOfWords = Math.max("hi", 3, "bye");
+// console.log(highestOfWords);
+
+// let result = Math.sqrt(64);
+// console.log(result);
+
+// let result2 = Math.pow(2, 2);
+// console.log(result2);
+
+
+// let x = 7.78;
+let y = 5.34;
+
+
+// console.log("X:", x, "becomes", Math.round(x));
+// console.log("Y:", y, "becomes", Math.round(y));
+
+// let x = Math.PI
+// console.log(x)
+// 
+// function ranNum(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// for (let x = 0; x < 100; x++) {
+//   console.log(ranNum(1, 100));
+// }
+
+// let arr = ["grapefruit", 4, "hello", 5.6, true];
+
+// function printStuff(element, index) {
+//  console.log("Printing stuff:", element, "on array position:" , index)
+// }
+
+// printStuff(arr[0] , 0)
+
+
+// arr.forEach((a , b)  => {
+//   console.log("Printing stuff:", a, "on array position:" , b)
+// })
+
+// let arr = ["2", 5, 4, new Date(), true];
+
+// function checkString(element, index) {
+//  if(typeof element === "string"){
+//   return element 
+//  }
+// }
+
+// let filterArr = arr.filter((element , index) => {
+//   if(typeof element === "string"){
+//     return element 
+//    }
+// });
+// console.log(filterArr);
+
+
+// let arr = [1, 2, 3, 4];
+// let mapped_arr = arr.map((zubair , index) => {
+//  return (zubair + 1)
+// });
+// console.log(mapped_arr);
+
+// const arr = [
+//   "zubair",
+//   "junaid",
+//   "ali",
+//   "hamza",
+//   "zubair",
+//   "noor",
+//   "asghar",
+//   "haziq",
+//   "junaid",
+//   "malik",
+//   "owais",
+// ];
+// const arr2 = arr.filter((value, index) => {
+//   return arr.indexOf(value) === index;
+// });
+// console.log(arr2);
+// const arr = ["hi","world","hello","hii","hi","hi World","Hi"]
+// console.log(arr.lastIndexOf("hi"));
+
+// const arr = ["Hi","world","hello","Hii","hi","hi World","Hi"]
+// const arr2 = arr.filter((element,index)=>{
+//  const ele2 = element.substring(0, 2);
+//  return (ele2 == "hi");
+// });
+// console.log(arr2);
+
+const ele1 = document.querySelectorAll("h1");
+const ele3 = document.querySelectorAll("h1");
+// const ele2 = document.body.children.greeting.innerText = "Bye!";
+
+console.dir(ele1);
+
+
+
+

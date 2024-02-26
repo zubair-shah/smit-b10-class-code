@@ -1,21 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <title>JavaScript Course</title>
+ <style>
+ .hide {
+ display: none;
+ }
+ .error {
+ color: red;
+ font-size: 0.8em;
+ font-family: sans-serif;
+ font-style: italic;
+ }
+ input {
+ border-color: #ddd;
+ width: 400px;
+ display: block;
+ font-size: 1.5em;
+ }
+ </style>
 </head>
 <body>
-    <h1>
-        learning javascript
-    </h1>
-    
+ <form name="myform"> Email :
+<i t t "t t" " il"> < l " hid
+Take the following steps:
+1. Using JavaScript, select all the page elements and set them as
+JavaScript objects so they are easier to select within the code. Also
+select all the page elements that have the error class as an object.
+2. Add an event listener to submit and capture the click, preventing the
+default form action.
+3. Loop through all the page elements that have a class error and add
+the hide class, which will remove them from view since this is a new
+submission.
+4. Using the regular expression for valid emails, test the results against
+the input value of the email field.
+5. Create a function to respond to errors, which removes the hide class
+from the element next to the element that triggered the event. Apply
+focus to that element within the function.
+6. If there is an error that an input does not match the desired regex, pass
+the parameters to the error handling function you just created.
+7. Check the password field input value to ensure only letters and
+numbers are used. Also check the length to ensure that it is 3-8
+characters. If either are false, then add the error with the error function
+and create a message for the user. Set the error Boolean to true .
+8. Add in an object to track the form data creation and add values to the
+object by looping through all the inputs, setting the property name to
+ <input type="text" name="email"> <span class="error hide
+ <br> Password :
+ <input type="password" name="password"> <span class="err
+ <br> User Name :
+ <input type="text" name="userName"> <span class="error h
+ <br>
+ <input type="submit" value="Sign Up"> </form>
+ <script>
 
-
-    <script>
-        // alert("hi i am zubair")
-        // console.log("Hi i am console")
-    </script>
-    <script src="./app.js"></script>
+ </script>
 </body>
 </html>
